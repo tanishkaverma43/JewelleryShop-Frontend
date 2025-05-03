@@ -10,7 +10,7 @@ import men_banner from "./Components/Assets/banner_mens.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
 import LoginSignup from "./Pages/LoginSignup";
 
-export const backend_url = 'http://localhost:4000';
+export const backend_url = 'https://jewelleryshop-backend-1-7nxc.onrender.com';
 export const currency = '₹';
 //https://jewelleryshop-backend-y0v1.onrender.com/
 function App() {
