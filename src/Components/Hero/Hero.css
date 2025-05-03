@@ -1,0 +1,119 @@
+.hero {
+    min-height: 90vh;
+    background: url('https://t3.ftcdn.net/jpg/06/63/12/42/360_F_663124277_KUSuqtqXMtgoQIx0moQgj0JuIDbOa1bv.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 9%;
+    position: relative;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Optional dark overlay for contrast */
+    z-index: 1;
+    border-radius: 0;
+}
+
+.hero-left,
+.hero-right {
+    z-index: 2;
+}
+
+.hero-left h2 {
+    color: #f5f5f5;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-left p {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 15px 0;
+}
+
+.hero-hand-icon img {
+    width: 60px;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 220px;
+    height: 52px;
+    border-radius: 30px;
+    margin-top: 30px;
+    background: #d4af37; /* Gold tone for luxury */
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hero-latest-btn:hover {
+    background: #b88a2f;
+    transform: translateY(-2px);
+}
+
+.hero-latest-btn img {
+    width: 18px;
+}
+
+.hero-right img {
+    width: 460px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .hero-left p {
+        font-size: 54px;
+    }
+    .hero-right img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+    .hero-right img {
+        width: 300px;
+        margin-top: 30px;
+    }
+    .hero-left p {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 60px 8%;
+        min-height: 100vh;
+    }
+    .hero-right {
+        display: none;
+    }
+    .hero-left p {
+        font-size: 42px;
+    }
+}
