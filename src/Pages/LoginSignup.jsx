@@ -12,7 +12,7 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
-    await fetch('https://jewelleryshop-backend-1-7nxc.onrender.com/login', {
+    await fetch('http://localhost:4000/login', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -35,7 +35,7 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
-    await fetch('https://jewelleryshop-backend-1-7nxc.onrender.com/signup', {
+    await fetch('http://localhost:4000/signup', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
